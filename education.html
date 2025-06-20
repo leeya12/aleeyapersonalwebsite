@@ -1,0 +1,110 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homapage</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+<div class="banner">
+  <img src="image/leeyabanner.jpg" alt="Leeya Banner">
+</div>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+
+  <li><a href="AboutMe.html">AboutMe</a></li>
+
+  <li><a href="family.html">My Strength</a></li>
+
+  <li><a class="active"
+href="education.html">Education Journey</a></li>
+
+  <li><a href="favourite.html">Things I like</a></li>
+
+  <li><a href="moments.html">Life Through My Lens</a></li>
+
+  <li><a href="achievement.html">My Achievement</a></li>
+
+</ul>
+
+
+   <section class="education-section">
+  <h2 class="section-title">My Education Journey</h2>
+
+  <div class="education-timeline">
+    <div class="timeline">
+
+      
+      <div class="timeline-item">
+        <span class="timeline-year">2010-2011</span>
+        <div class="timeline-images">
+        <img src="image/kindergarten.jpg" alt="kindergarten" class="timeline-img"> <style="max-width:400px; width:100%; height:300%;">
+        <p>🎒 I started kindergarten at 5 years old, back in 2010! I was a super chubby little girl, all cheeks and giggles 😄✨. Fun fact! my mom was my teacher, so of course... I was a bit clingy (okay, very clingy) 💗</p>
+      </div>
+<br>
+      <div class="timeline-item">
+        <span class="timeline-year">2012-2017</span>
+        <div class="timeline-images">
+        <img src="image/skjap.jpg" alt="primary school" id="special-img" class="timeline-img">
+        <p> I began my primary school journey at SK Jalan Air Panas! I don’t have a proper solo photo. Just fun memories with my friends. We proudly served as COMBI prefects, spreading kindness and teamwork 👭</p>
+      </div>
+<br>
+      <div class="timeline-item">
+  <span class="timeline-year">2018-2023</span>
+  <div class="timeline-images">
+    <img src="image/highschool.jpg" alt="highschool" class="timeline-img">
+    <img src="image/chan.jpg" alt="highschool" class="timeline-img">
+  </div>
+  <p>🌸 Stepped into secondary school, where things got real with SPM, Malaysia’s biggest exam.💫 With support from amazing friends, I made it through… and surprise, 6As! 📸 A sweet moment with my fav teacher, Cikgu Chan. Funfact! I go to all girls school 👧🏻✨ It is Fun, loud, and a little dramatic too!</p>
+
+<div>  
+<p>My Highschool!
+<br><a href ="https://myschool.daa-taa.com/school/sekolah-menengah-kebangsaan-p-air-panas-7418" >click here to know more about Air Panas Girl School</a>
+</div>
+
+<br>
+      <div class="timeline-item">
+        <span class="timeline-year">2023-present</span>
+        <div class="timeline-images">
+        <img src="image/uni.jpg" alt="University" class="timeline-img">
+        <p>🎓 I officially entered university life at UiTM! Still can’t believe I’m a university student now. 🌟 A new chapter begins, filled with growth, independence, and dreams coming true.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="footer">
+  <p>&copy 2025, NUR ALEEYA. All right reserved.
+<br>
+<a href=”https://www.instagram.com/#”> Contact Me</a>
+</p>
+</div>
+
+<script>
+  const items = document.querySelectorAll('.timeline-item');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // Remove this line if you want repeat animation
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  items.forEach(item => {
+    observer.observe(item);
+  });
+</script>
+
+</body>
+</html>

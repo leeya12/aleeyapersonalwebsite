@@ -1,0 +1,120 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homapage</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+<div class="banner">
+  <img src="image/leeyabanner.jpg" alt="Leeya Banner">
+</div>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+
+  <li><a href="AboutMe.html">AboutMe</a></li>
+
+  <li><a href="family.html">My Strength</a></li>
+
+  <li><a href="education.html">Education Journey</a></li>
+
+  <li><a href="favourite.html">Things I like</a></li>
+
+  <li><a class="active"
+href="moments.html">Life Through My Lens</a></li>
+
+  <li><a href="achievement.html">My Achievement</a></li>
+
+</ul>
+
+
+
+
+ <section class="polaroid-gallery">
+    <h2>Picture Dump 📷</h2>
+ <!-- AUDIO STARTS HERE -->
+  <div style="text-align: center; margin-top: 30px;">
+    <audio controls autoplay loop>
+      <source src="audio/beautiful.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.
+    </audio>
+    <p style="margin-top: 10px;">☁️ As you wander through my Picture Dump, enjoy this song by Crush 🎧.</p>
+  </div>
+  <!-- AUDIO ENDS HERE -->
+    <div class="polaroid-grid">
+      <div class="polaroid" onclick="showCaption(this)">
+        <img src="image/picdump2.jpg" alt="Memory 2">
+	<p class="caption-main">CDIM144 4C Class! Me and My Classmates🌙</p>
+        <p class="caption">Click me 💌</p>
+      </div>
+<div class="polaroid" onclick="showCaption(this)">
+        <img src="image/picdump3.jpg" alt="Memory 3">
+	<p class="caption-main">celebrating me and my nieces birthday together🍒</p>
+        <p class="caption">Click me 💌</p>
+      </div>
+<div class="polaroid" onclick="showCaption(this)">
+        <img src="image/picdump6.jpg" alt="Memory 6">
+	<p class="caption-main">ride to Gepuk!!!📍</p>
+        <p class="caption">Click me 💌</p>
+      </div>
+      <div class="polaroid" onclick="showCaption(this)">
+        <img src="image/picdump8.jpg" alt="Memory 8">
+	<p class="caption-main">My Lion Sister🕊️</p>
+        <p class="caption">Click me 💌</p>
+      </div>
+<div class="polaroid" onclick="showCaption(this)">
+        <img src="image/picdump9.jpg" alt="Memory 9">
+	<p class="caption-main">Chilhood friends, 2010-present!💅</p>
+        <p class="caption">Click me 💌</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Video Dump (Cloud Gallery) -->
+<section class="cloud-gallery">
+  <h2>Random Video ☁</h2>
+  <div class="cloud-items">
+    <div class="cloud-card">
+      <video src="video/videodump5.mp4" controls></video>
+	 <p class="video-caption">💬 Eid-ul Adha 2025 ☁️</p>
+    </div>
+    <div class="cloud-card">
+      <video src="video/videodump3.mp4" controls></video>
+	<p class="video-caption"> A beetles gently landed on the tree by Ayah’s grave 🕊️💔</p>
+    </div>
+    <div class="cloud-card">
+      <video src="video/videodump4.mp4" controls></video>
+	<p class="video-caption">My siblings and I held a python named Dewi 🐍 she was incredibly gentle 💛</p>
+    </div>
+	<div class="cloud-card">
+      <video src="video/meandibu.mp4" controls></video>
+	<p class="video-caption">me and ibu 💛</p>
+    </div>
+  </div>
+</section>
+  </div>
+</section>
+
+
+<script>
+function showCaption(el) {
+  const caption = el.querySelector('.caption');
+  caption.textContent = caption.textContent === 'Clicked! 🧡' ? 'Click me 💌' : 'Clicked! 🧡';
+}
+</script>
+
+
+<div class="footer">
+  <p>&copy 2025, NUR ALEEYA. All right reserved.
+<br>
+<a href=”https://www.instagram.com/#”> Contact Me </a>
+</p>
+</div>
+
+
+</body>
+</html>
